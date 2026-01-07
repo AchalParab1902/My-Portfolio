@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16 animate-fade-in-delay-3">
             <a
-              href="https://drive.google.com/file/d/1EiUeQ6qULDPiEb4s20mwz1fMjaTx5z5L/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1TQRLffnu3JfEUqkgVNAfXajy7nwlHgCq/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 cursor-pointer"
