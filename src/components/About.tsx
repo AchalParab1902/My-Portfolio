@@ -89,7 +89,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
-                  C, Java, Javascript, HTML, CSS, Tailwind, React.js, Node.js.
+                 Javascript, React.js, Node.js, Express, Tailwind css, MongoDB.
                 </li>
               </ul>
             </div>

@@ -3,27 +3,43 @@ import { ExternalLink, Github, Folder } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const projects = [
+     {
+      title: 'RechargePro – MERN Stack Recharge Management System',
+      description: 'RechargePro is a MERN stack recharge platform with User, Company, and Admin roles, featuring secure authentication and Razorpay payment integration.Includes role-based dashboards where users recharge, companies manage plans, and admins monitor platform data.',
+      image: '/rechargePro.png',
+      technologies: ['Rect.js','Node.js', 'Tailwind css','MongoDB'],
+      liveUrl : "https://student-management-system-frontend-eoj1.onrender.com/",
+      githubUrl: 'https://github.com/AchalParab1902/RechargePro',
+      featured: true,
+    },
+     {
+      title: 'Student Management Authentication System',
+      description: 'Developed a secure MERN-based authentication system with login/signup, role-based access (admin & student), protected routes, and MongoDB integration. Implemented validations and dashboards using React, Node.js, Express, and JWT authentication.',
+      image: '/SMS.png',
+      technologies: ['Rect.js','Node.js', 'Tailwind css','MongoDB'],
+      liveUrl : "https://student-management-system-frontend-eoj1.onrender.com/",
+      githubUrl: 'https://github.com/AchalParab1902/Student_Management_System',
+      featured: true,
+    },
     {
-      title: 'AI Career Coach',
-      description: `Built a responsive career guidance platform using Next.js and Tailwind CSS, delivering personalized recommendations
-based on user input.
-– Integrated smart backend logic to analyze user goals and provide tailored advice for job roles, skills, and growth paths.
-– Designed clean UI/UX for intuitive navigation, ensuring users could easily explore career options and receive actionable
-insights.`,
-      image: '/AIcareerCoach.png',
-      technologies: ['React.js', 'Next.js', 'MySQL', 'NeonDB', 'Clerk'],
-      githubUrl: 'https://github.com/vinitworkspace/vinzie-career-coach',
+      title: 'TaskTracker',
+      description: 'Developed a full-stack ToDo application featuring secure authentication, forgot password via Nodemailer, and complete CRUD operations for tasks with priority and status management.Built a responsive dashboard with data visualizations using chart libraries, backed by RESTful APIs in Node.js and Express.js with MongoDB for efficient data handling.',
+      image: '/ToDoApp.png',
+      technologies: ['Rect.js','Node.js', 'Tailwind css','MongoDB'],
+      liveUrl : "https://interractive-story-telling.vercel.app/",
+      githubUrl: 'https://github.com/AchalParab1902/Interractive_Story_telling',
       featured: true,
     },
     {
       title: 'Interractive Story Telling',
-      description: 'Implemented dynamic features such as page navigation, play/pause voice narration button, and smooth animations for interactive storytelling.',
+      description: 'Implemented dynamic and interactive features including seamless page navigation, a play/pause voice narration system, and smooth animations to enhance user engagement and deliver an immersive storytelling experience.',
       image: '/Story.png',
       technologies: ['HTML','CSS', 'JavaScript'],
       liveUrl : "https://interractive-story-telling.vercel.app/",
       githubUrl: 'https://github.com/AchalParab1902/Interractive_Story_telling',
       featured: true,
     },
+    
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
@@ -43,18 +59,18 @@ insights.`,
         </div>
 
         {/* Featured Projects */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
-            <Folder className="text-blue-400 mr-3" size={24} />
-            Featured Projects
-          </h3>
-          <div className="grid lg:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
-              <div
-                key={index}
-                className="bg-slate-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-slate-700/50 hover:border-blue-500/50 transition-all duration-300 transform hover:scale-105"
-              >
-                <div className="relative group">
+       {/* <div className="mb-8 space-y-4"> */}
+<div className="w-full max-w-9xl p-4 mb-6 space-y-4">
+  <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
+    <Folder className="text-blue-400 mr-3" size={24} />
+    Featured Projects
+  </h3>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {featuredProjects.map((project, index) => (
+      <div key={index} className="bg-slate-800/50 rounded-2xl">
+               <div className="relative group rounded-t-2xl overflow-hidden">
+
                   <img
                     src={project.image}
                     alt={project.title}
